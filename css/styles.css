@@ -1,7 +1,7 @@
 
 :root {
   --border-color: rgb(170, 170, 170);
-  --grid-darkcyan-color: darkcyan;
+  --grid-darkcyan-color: #e1eedd;
   --grid-gold-color: gold;
   --sun-start-color: #edc655;
   --sun-end-color: #f76414;
@@ -28,20 +28,20 @@
 
 .page-header__item {
 
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 150px;
-    transition-duration: 3s;
-    transition-property: opacity;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 150px;
+  transition-duration: 3s;
+  transition-property: opacity;
 
-  }
+}
 
 .navigation-list__item{
-    opacity: 1;
+  opacity: 1;
 }
 
 .navigation-list__item:hover, .navigation-list__item:focus{
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 
@@ -49,19 +49,18 @@
 
   
 .main-navigation {
-    flex-grow: 1;
-    text-align: right;
-    margin-right: 25px;
-  }
+  flex-grow: 1;
+  text-align: right;
+  margin-right: 25px;
+}
 
 .navigation-list{
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .navigation-list li{
-    display: inline-block;
-    margin-left: 10px
-    
+  display: inline-block;
+  margin-left: 10px   
 }
 
 
@@ -69,83 +68,93 @@
 /*animation and transition stuff for about picture*/
 
 .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 
 .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 
 .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
 @keyframes color-change{
-    from{
-        fill: var(--sun-start-color);
-    }
-    to{
-        fill: var(--sun-end-color);
-    }
+  from{
+    fill: var(--sun-start-color);
+  }
+  to{
+    fill: var(--sun-end-color);
+  }
 }
 
 @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
-    }
+  from {
+    transform: translate(0, 50px);
   }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
 
 @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
+  from {
+    transform: translate(446px, 48px);
   }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
 
 
-/*Centering the about page*/
+/*Centering the about page
 
 .about-mainstuff{
     width: 1fr;
     display: grid;
     justify-content: center;
-    grid-gap: 20px;
+    grid-row-gap: 20px;
     grid-auto-flow: row;
+}
+                  */
+
+.about-mainstuff{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr, 1fr;
+  justify-content: center;
+  grid-row-gap: 20px;
 }
 
 .about-mainstuff-information{
-    display:grid;
-    justify-items: center;
+  display:grid;
+  justify-items: center;
 }
 
 
 .about-mainstuff-information__list{
-    width: 1fr;  
-    display: grid;
-    list-style-type: none;
-    text-align: center;
-    justify-items: center;
-    position: relative;
-    right: 1%;
+  list-style-type: none;
+  text-align: center;
 }
 
 #about-button{
-    position: relative;
-    left: 2%;
+  display: grid;
+  justify-items: center;
+  position: relative;
+  left: 15px;
+}
 
+.about-mainstuff-townpicture{
+  display:grid;
+  justify-items: center;
 }
 
 
@@ -156,23 +165,23 @@
 /* grid stuff for work page*/
 
 .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
 }
 
 .grid__item{
-    background-color: var(--grid-darkcyan-color);
+  background-color: var(--grid-darkcyan-color);
 
 }
 
 .grid__item:last-child{
-    background-color: var(--grid-gold-color);
-    grid-column-start: 4;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  background-color: var(--grid-gold-color);
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
 
 }
 
@@ -187,91 +196,94 @@
 /* normal CSS stuff for index page */
 
 body {
-    background-color: lightgray;
-    font-family: 'Mate SC', sans-serif;
-    font-weight: 400;
+  background-color: #fefbe9;
+  font-family: 'Mate SC', sans-serif;
+  font-weight: 400;
 
 }
 
 
 .profile{
-    min-width: 360px;
-    max-width: 1200px;
-    height: auto;
-    margin: 0 auto;
-    width: 50%;
-    box-sizing: border-box;
+  min-width: 360px;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  width: 50%;
+  box-sizing: border-box;
+  padding-top: 75px;
 }
 
 
 .profile__pic{
-    float: left;
-    width: 250px;
-    margin-right: 40px;
-    border-radius: 50%;
+  float: left;
+  width: 250px;
+  margin-right: 50px;
+  border-radius: 50%;
+    
 }
 
 .page-footer{
-    clear: both;
-    flex-direction: column;
-    text-align: center;
-    box-sizing: border-box;    
+  clear: both;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;    
+  padding-top: 100px;
 }
 
 
 h1{
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
   
 h3 {
-    font-size: 18px;
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 
 /* link stuff*/
 
 a {
-    color: var(--link-normal-color);
+  color: var(--link-normal-color);
 }
 
 a:visited {
-    /* visited link */
-    color: var(--link-visited-color);
+  /* visited link */
+  color: var(--link-visited-color);
 }
 
 a:hover, a:focus {
-    /* No underlining when hovering over a link */
-    text-decoration: none;
+  /* No underlining when hovering over a link */
+  text-decoration: none;
 }
 
 a:active {
-    /* selected link */
-    color: var(--link-active-color);
+  /* selected link */
+  color: var(--link-active-color);
 }
 
 
 /*button stuff*/
 button, .button {
-    border: none ;
-    display: inline-block;
-    color: black;
-    background-color: #bd9393;
-    font-family: inherit;
-    color: white ;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid rgba(0,0,0,0.3);
-    transition-duration: 0.2s;
-    transition-property: opacity;
+  border: none ;
+  display: inline-block;
+  color: white;
+  background-color: #f6c453;
+  font-family: inherit;
+  color: white ;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  transition-duration: 0.2s;
+  transition-property: opacity;
 
 }
 
@@ -285,36 +297,47 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .button_secondary {
-    background-color: #e0b354;
-    color: #bd9393;
-  }
+  background-color: #e0b354;
+  color: #bd9393;
+}
 
 
 
 
 /* sizeing styleings */
 @media all and (max-width: 750px) {
-    .grid {
-      grid-gap: 10px;
-    }
-    .grid__item:last-child {
-      grid-column: auto / auto;
-      grid-row: auto / auto;
-    }
-    h1 {
-      font-size: 22px;
-    }
+  .grid {
+    grid-gap: 10px;
   }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  .profile{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #contact-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+  }
+
+}
 
 @media all and (min-width: 500px) and (max-width: 750px){
-    .grid {
-      grid-template-columns: 1fr 1fr;
-    }
+  .grid {
+    grid-template-columns: 1fr 1fr;
   }
+}
 
 @media all and (max-width: 500px){
-    .grid{
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
+  .grid{
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
 }

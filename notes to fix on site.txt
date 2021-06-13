@@ -1,0 +1,12 @@
+issues to fix
+
+-my shit does not look centered enough
+
+-do some research on color and layout design to make shit look better
+
+-try to make adaptable centering for all pages of portfolio
+
+-get it work correctly on phone.
+
+
+-ignore IE :) 
