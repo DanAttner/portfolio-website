@@ -6,7 +6,7 @@
   --sun-start-color: #edc655;
   --sun-end-color: #f76414;
   --link-normal-color: #1c44f5;
-  --link-visited-color:#7923e9;
+  --link-visited-color: #7923e9;
   --link-active-color: #f38e2f;
 }
 
@@ -15,16 +15,14 @@
 
 
 
-
-
-/* crazy flex box stuff for header*/
+/* crazy flex box stuff for header */
 
 .page-header {
-    display: flex;
-    width: 100%;
-    padding: 20px;
-    border-bottom: 1px solid var(--border-color);
-  }
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
 
   
 
@@ -135,8 +133,13 @@
 
 
 .about-mainstuff-information__list{
+    width: 1fr;  
+    display: grid;
     list-style-type: none;
     text-align: center;
+    justify-items: center;
+    position: relative;
+    right: 1%;
 }
 
 #about-button{
