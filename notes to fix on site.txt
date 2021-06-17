@@ -1,12 +1,4 @@
-issues to fix
+make about page, "fun"
 
--my shit does not look centered enough
+(make/steal crazy animated grid layout?)
 
--do some research on color and layout design to make shit look better
-
--try to make adaptable centering for all pages of portfolio
-
--get it work correctly on phone.
-
-
--ignore IE :) 

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Contact Dan Attner </title>
     <link rel="shortcut icon" type="image/ico" href="img/falcostocki.ico"/> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">  <!-- upload google font-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">   <!-- normalize style accross browsers-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -37,38 +36,50 @@
 
 
 
-  <div>   <!---- second div to handle center of page-->
-    <h1> Contact </h1>
-    Daniel Attner<br>
-    <br>
-    Address: <br>
-    39 super cool rd<br>
-    Hooupla, NY<br>
-    11704<br>
-    <br>
-    Tel:  <a href="tel:888-232-8832"> 888-232-8832</a><br>
-    Email:  <a href="mailto:firelazerblarg@yahoo.com"> partytimewoohoo@hotmail.com</a><br>
-  </div>
+     <!---- main body of page -->
+   <section class="contact-grid">
 
-  <br>
-  <br>
-  <div> <!-- input stuff -->
-    <form action="" method="post" id="contact-form">
-        <label class="standard-label" id="contact-email">E-mail: </label>
-        <input type="email" id="contact-emailin" required>
+      <div class = "contact-part">
+         <h1> Contact </h1> 
+         Reach me at the following
+      </div>
+
+      <div class = "contact-part">
+        <span> Tel:  <a href="tel:631-707-3919"> 631-707-3919</a> </span>
+        <span> Email:  <a href="mailto:danattner42@gmail.com"> danattner42@gmail.com</a> </span>
+      </div>
+
+             <!-- input stuff -->
+      <div class = "contact-part">
+         <h3> Or shoot me a message by filling out the information below</h3>
+         <span>
+            <label class="standard-label" id="contact-email">E-mail: </label>
+            <input type="email" id="contact-emailin" required>
+         </span>
+      </div>
       
-        <label class="standard=label" id="contact-tel">Telephone: </label>
-        <input type="tel" id="contact-telin" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
-   
-        <label class="standard-label" id="contact-text">Message: </label>
-        <textarea maxlength="240" id="contact-textarea" required></textarea>
+      <div class = "contact-part" id ="contact-part-tel">
+         <span>
+            <label class="standard-label" id="contact-tel">Telephone: </label>
+            <input type="tel" id="contact-telin" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+         </span>
+      </div>
 
-        <input type="submit" value="Send message">
+      <div class = "contact-part">
+         <span>
+            <label class="standard-label" id="contact-text">Message: </label>
+            <textarea maxlength="240" id="contact-textarea" required></textarea>
+         </span>
+      </div>
 
-    </form>
-  </div>
+      <div class = "contact-part">
+         <span>
+            <input type="submit" value="Send message">
+         </span>
+      </div>
 
-<script src="js/tota11y.min.js"> </script>
+   </section>
+
 </body>
 
 </html>

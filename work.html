@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Dan Attner work </title>
     <link rel="shortcut icon" type="image/ico" href="img/falcostocki.ico"/> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">  <!-- upload google font-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">   <!-- normalize style accross browsers-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
@@ -40,10 +39,10 @@
 
 <!-- Main content -->
 <section>
-    <h1>Work</h1>
-    <br>
-    <p>These are my lastest web development projects</p>
-    <br>
+    <div class = "work-top">
+      <h1>Work</h1>
+      <p>These are my lastest web development projects</p>
+    </div>
     <div class="grid">
        <!-- Grid items will live here -->
        <div class="grid__item" id="mobile-block">
@@ -83,14 +82,17 @@
 </section>
 
 
-  <footer class="page-footer" >   <!-- third div to handle bottom of page-->
-    <p> find me on </p>
-    <div class="social-media">
-      <img src="img/github.png" alt="Github">
-      <img src="img/twitter.png" alt="Twitter">
-      <img src="img/linkedin.png" alt="LinkedIn">
+  
+<footer class="page-footer" >   <!-- third div to handle bottom of page-->
+  <p> find me on </p>
+  <div class="social-media">
+    <a href="https://github.com/DanAttner" target="_blank">
+    <img src="img/github.png" alt="Github"></a>
 
-    </div>
+    <a href="https://www.linkedin.com/" target="_blank">
+    <img src="img/linkedin.png" alt="LinkedIn"></a>
+
+  </div>
 
     <!--<br>  BUTTON STUFF
     <br>
@@ -101,7 +103,6 @@
   </footer>
 
 
-  <script src="js/tota11y.min.js"> </script>
 </body>
 
 </html>
